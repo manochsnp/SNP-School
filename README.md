@@ -48,7 +48,7 @@
       h1 {
         color: #b2ebf2;
         text-align: center; /* จัดตำแหน่งข้อความให้อยู่กลาง */
-        margin-bottom: 1.5em; /* Reduced margin-bottom */
+        margin-bottom: 1.3em; /* Reduced margin-bottom */
         font-size: 0.9em;
       }
       h3 {
