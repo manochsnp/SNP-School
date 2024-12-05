@@ -14,7 +14,7 @@
         max-width: 100%;
         background-color: #fff;
         padding: 2em;
-        border-radius: 40px;
+        border-radius: 80px;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
       }
       .form-control, .form-select {
