@@ -47,8 +47,8 @@
       }
       h1 {
         color: #b2ebf2;
-        text-align: center;
-        margin-bottom: 0.8em; /* Reduced margin-bottom */
+        text-align: right; /* จัดตำแหน่งข้อความให้อยู่ด้านขวา */
+        margin-bottom: 1.2em; /* Reduced margin-bottom */
         font-size: 0.8em;
       }
       h3 {
