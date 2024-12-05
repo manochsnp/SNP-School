@@ -60,10 +60,10 @@
       }
       .swal2-custom-popup {
         width: 25em; /* ปรับขนาด popup */
-        font-size: 0.3em; /* ลดขนาดตัวหนังสือใน popup */
+        font-size: 0.35em; /* ลดขนาดตัวหนังสือใน popup */
       }
       .swal2-custom-content {
-        font-size: 0.3em; /* ลดขนาดตัวหนังสือในเนื้อหาภายใน popup */
+        font-size: 0.35em; /* ลดขนาดตัวหนังสือในเนื้อหาภายใน popup */
       }
     </style>
   </head>
@@ -178,8 +178,8 @@
           
           // แสดงหน้าต่างสรุปข้อมูลหลังจากส่งข้อมูลสำเร็จ
           Swal.fire({
-            title: 'สำเร็จ!',
-            html: `<p>สรุป</p>${summaryContent}`,
+            title: 'สำเร็จ',
+            html: `<p>กรุณาแคปหน้าจอส่งในกลุ่มไลน์</p>${summaryContent}`,
             icon: 'success',
             confirmButtonText: 'ปิด',
             customClass: {
