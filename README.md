@@ -59,11 +59,11 @@
         font-size: 1.2em;
       }
       .swal2-custom-popup {
-        width: 25em; /* ปรับขนาด popup */
-        font-size: 0.8em; /* ลดขนาดตัวหนังสือใน popup */
+        width: 23em; /* ปรับขนาด popup */
+        font-size: 0.2em; /* ลดขนาดตัวหนังสือใน popup */
       }
       .swal2-custom-content {
-        font-size: 0.8em; /* ลดขนาดตัวหนังสือในเนื้อหาภายใน popup */
+        font-size: 0.2em; /* ลดขนาดตัวหนังสือในเนื้อหาภายใน popup */
       }
     </style>
   </head>
