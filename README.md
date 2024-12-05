@@ -71,7 +71,7 @@
   <div class="pt-1"></div>
   <div class="container">
     <div>
-      <h3 class="text-center">โรงเรียนสูงเนินพิทยาคม</h3>
+      <h3 class="text-center">แบบบันทึกการลา</h3>
     </div>
     <form method="post" autocomplete="off" name="hello-sheet">
       <div class="form-group">
@@ -115,11 +115,11 @@
         </select>
         </div>
       <div class="form-group">
-        <label for="เหตุผลการลา">เหตุผลการลา</label>
-        <input type="text" class="form-control" placeholder="" name="เหตุผลการลา">
+        <label for="เนื่องจาก">เนื่องจาก</label>
+        <input type="text" class="form-control" placeholder="" name="เนื่องจาก">
       </div>
       <div class="form-group">
-        <label for="จำนวนวันลา">จำนวนวันลา ครั้ง/วัน</label>
+        <label for="จำนวนวันลา">จำนวนวันลา</label>
         <div class="form-group">
           <select id="leaveDays" name="จำนวนวันลา" class="form-select" required>
                 <option value=""></option>
