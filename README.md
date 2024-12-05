@@ -48,7 +48,7 @@
       h1 {
         color: #b2ebf2;
         text-align: right; /* จัดตำแหน่งข้อความให้อยู่ด้านขวา */
-        margin-bottom: 1.2em; /* Reduced margin-bottom */
+        margin-bottom: 0em; /* Reduced margin-bottom */
         font-size: 0.8em;
       }
       h3 {
@@ -179,7 +179,7 @@
           // แสดงหน้าต่างสรุปข้อมูลหลังจากส่งข้อมูลสำเร็จ
           Swal.fire({
             title: 'ใบลาสำเร็จ',
-            html: `<h1>แคปหน้าจอส่งในกลุ่มไลน์ทุกครั้ง</h1><p>เรียน ผู้อำนวยการโรงเรียนสูงเนินพิทยาคม ข้าพเจ้าขออนุญาตตามรายละดังแนบ</p>${summaryContent}`,
+            html: `<h1>แคปหน้าจอส่งในกลุ่มไลน์ทุกครั้ง</h1><p>เรียน ผู้อำนวยการโรงเรียนสูงเนินพิทยาคม</p><p>ข้าพเจ้าขออนุญาตตามรายละดังแนบ</p>${summaryContent}`,
             icon: 'success',
             confirmButtonText: 'ปิด',
             customClass: {
