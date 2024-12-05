@@ -46,10 +46,10 @@
         background-color: #0056b3;
       }
       h1 {
-        color: #333;
+        color: #b2ebf2;
         text-align: center;
-        margin-bottom: 0.1em; /* Reduced margin-bottom */
-        font-size: 0.5em;
+        margin-bottom: 0.8em; /* Reduced margin-bottom */
+        font-size: 0.8em;
       }
       h3 {
         color: #333;
