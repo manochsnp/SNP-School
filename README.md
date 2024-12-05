@@ -75,9 +75,9 @@
     </div>
     <form method="post" autocomplete="off" name="hello-sheet">
       <div class="form-group">
-        <label for="ชื่อ-สกุล">ชื่อ สกุล</label>
+        <label for="ชื่อ">ชื่อ</label>
         <div class="form-group">
-          <select id="ชื่อ-สกุล" name="ชื่อ-สกุล" class="form-select" required>
+          <select id="ชื่อ" name="ชื่อ" class="form-select" required>
             <option value=""></option>
             <option value="นางรภัทภร สิทธิวงศ์">นางรภัทภร สิทธิวงศ์</option>
             <option value="นางณัฐิยา ดาราย้อย">นางณัฐิยา ดาราย้อย</option>
