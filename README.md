@@ -14,7 +14,7 @@
         max-width: 100%;
         background-color: #fff;
         padding: 2em;
-        border-radius: 50px;
+        border-radius: 40px;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
       }
       .form-control, .form-select {
@@ -59,7 +59,7 @@
         font-size: 1.2em;
       }
       .swal2-custom-popup {
-        width: 26em; /* ปรับขนาด popup */
+        width: 28em; /* ปรับขนาด popup */
         font-size: 0.35em; /* ลดขนาดตัวหนังสือใน popup */
       }
       .swal2-custom-content {
@@ -81,25 +81,25 @@
             <option value=""></option>
             <option value="นางรภัทภร สิทธิวงศ์">นางรภัทภร สิทธิวงศ์</option>
             <option value="นางณัฐิยา ดาราย้อย">นางณัฐิยา ดาราย้อย</option>
-            <option value="นางสาวกานดา เก็จรัมย์">นางสาวกานดา เก็จรัมย์</option>
+            <option value="น.ส.กานดา เก็จรัมย์">น.ส.กานดา เก็จรัมย์</option>
             <option value="นายจิรศักดิ์ ยอดชะลูด">นายจิรศักดิ์ ยอดชะลูด</option>
             <option value="นางฐิติรัตน์ ดำรงค์">นางฐิติรัตน์ ดำรงค์</option>
-            <option value="นางสาวดวงสมร ช่วงชัย">นางสาวดวงสมร ช่วงชัย</option>
+            <option value="น.ส.ดวงสมร ช่วงชัย">น.ส.ดวงสมร ช่วงชัย</option>
             <option value="นายจิรวัฒน์ ดีล้อม">นายจิรวัฒน์ ดีล้อม</option>
             <option value="นายนิติศักดิ์ หนองเรือง">นายนิติศักดิ์ หนองเรือง</option>
             <option value="นายพีระพล ศรีวงสุข">นายพีระพล ศรีวงสุข</option>
             <option value="นางศรินภา เชียนรัมย์ มอบยิ่ง">นางศรินภา เชียนรัมย์ มอบยิ่ง</option>
             <option value="นายคมกริช โฉมงาม">นายคมกริช โฉมงาม</option>
-            <option value="นางสาวปริชญา สีหานู">นางสาวปริชญา สีหานู</option>
-            <option value="นางสาวกานต์ติมา ทองน้อย">นางสาวกานต์ติมา ทองน้อย</option>
-            <option value="นางสาวสุภาวรรณ ดำเสนา">นางสาวสุภาวรรณ ดำเสนา</option>
+            <option value="น.ส.ปริชญา สีหานู">น.ส.ปริชญา สีหานู</option>
+            <option value="น.ส.กานต์ติมา ทองน้อย">น.ส.กานต์ติมา ทองน้อย</option>
+            <option value="น.ส.สุภาวรรณ ดำเสนา">น.ส.สุภาวรรณ ดำเสนา</option>
             <option value="นายมาโนช เจริญยิ่ง">นายมาโนช เจริญยิ่ง</option>
-            <option value="นางสาวสุนิษา สัตบุตร">นางสาวสุนิษา สัตบุตร</option>
+            <option value="น.ส.สุนิษา สัตบุตร">น.ส.สุนิษา สัตบุตร</option>
             <option value="นางวิภารัตน์ จันทะนุภา">นางวิภารัตน์ จันทะนุภา</option>
-            <option value="นางสาวศันสนีย์ หมายดี">นางสาวศันสนีย์ หมายดี</option>
+            <option value="น.ส.ศันสนีย์ หมายดี">น.ส.ศันสนีย์ หมายดี</option>
             <option value="นายอรรณพ เการัมย์">นายอรรณพ เการัมย์</option>
             <option value="นายธีรพงษ์ บุษยงค์">นายธีรพงษ์ บุษยงค์</option>
-            <option value="นางสาวกมลลักษณ์ ยอดเครือ">นางสาวกมลลักษณ์ ยอดเครือ</option>
+            <option value="น.ส.กมลลักษณ์ ยอดเครือ">น.ส.กมลลักษณ์ ยอดเครือ</option>
           </select>
         </div>
       <div class="form-group">
