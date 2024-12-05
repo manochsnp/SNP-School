@@ -63,7 +63,7 @@
         font-size: 0.5em; /* Adjust the font size within the popup */
       }
       .swal2-custom-content {
-        font-size: 0.5em; /* Increase the font size of the content */
+        font-size: 0.4em; /* Increase the font size of the content */
       }
     </style>
   </head>
@@ -179,7 +179,7 @@
           // แสดงหน้าต่างสรุปข้อมูลหลังจากส่งข้อมูลสำเร็จ
           Swal.fire({
             title: 'สำเร็จ!',
-            html: `<p>บันทึกข้อมูลเรียบร้อยแล้ว</p><p>ข้อมูลที่กรอก:</p>${summaryContent}`,
+            html: `<p>สรุปรายละเอียด:</p>${summaryContent}`,
             icon: 'success',
             confirmButtonText: 'ปิด',
             customClass: {
