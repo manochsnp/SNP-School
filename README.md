@@ -179,7 +179,7 @@
           // แสดงหน้าต่างสรุปข้อมูลหลังจากส่งข้อมูลสำเร็จ
           Swal.fire({
             title: 'สำเร็จ',
-            html: `<p>กรุณาแคปหน้าจอส่งในกลุ่มไลน์</p>${summaryContent}`,
+            html: `<p>แคปหน้าจอส่งในกลุ่มไลน์</p>${summaryContent}`,
             icon: 'success',
             confirmButtonText: 'ปิด',
             customClass: {
