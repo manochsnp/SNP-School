@@ -59,11 +59,11 @@
         font-size: 1.2em;
       }
       .swal2-custom-popup {
-        width: 25em; /* Reduce the width of the popup */
-        font-size: 0.5em; /* Adjust the font size within the popup */
+        width: 25em; /* ปรับขนาด popup */
+        font-size: 0.8em; /* ลดขนาดตัวหนังสือใน popup */
       }
       .swal2-custom-content {
-        font-size: 0.2em; /* Increase the font size of the content */
+        font-size: 0.8em; /* ลดขนาดตัวหนังสือในเนื้อหาภายใน popup */
       }
     </style>
   </head>
@@ -179,11 +179,12 @@
           // แสดงหน้าต่างสรุปข้อมูลหลังจากส่งข้อมูลสำเร็จ
           Swal.fire({
             title: 'สำเร็จ!',
-            html: `<p></p>${summaryContent}`,
+            html: `<p>สรุป</p>${summaryContent}`,
             icon: 'success',
             confirmButtonText: 'ปิด',
             customClass: {
-              popup: 'swal2-custom-popup'
+              popup: 'swal2-custom-popup', // ใช้คลาสที่กำหนดไว้
+              content: 'swal2-custom-content' // ใช้คลาสที่กำหนดไว้
             }
           }).then(() => {
             form.reset(); // Reset form fields after the alert is confirmed
