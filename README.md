@@ -140,58 +140,69 @@
       </div>  
       <button type="submit" name="submit" value="Send message" class="btn btn-primary">บันทึก</button>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbw3c4H3wOmuvn3KyoXPT7BSqwob7P2pasXN7AeG1MMDcKiQr84PTODy2QPbqhzEJpjdNw/exec';
-      const form = document.forms['hello-sheet'];
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3c4H3wOmuvn3KyoXPT7BSqwob7P2pasXN7AeG1MMDcKiQr84PTODy2QPbqhzEJpjdNw/exec';
+    const form = document.forms['hello-sheet'];
 
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        Swal.fire({
-          title: 'กรุณารอสักครู่',
-          text: 'ระบบกำลังประมวลผล...',
-          icon: 'info',
-          allowOutsideClick: false,
-          customClass: {
-            popup: 'swal2-custom-popup',
-            content: 'swal2-custom-content'
-          },
-          didOpen: () => {
-            Swal.showLoading();
-          }
-        });
-        try {
-          const response = await fetch(scriptURL, {
-            method: 'POST',
-            body: new FormData(form)
-          });
-          if (response.ok) {
-            Swal.fire({
-              title: 'สำเร็จ!',
-              text: 'บันทึกข้อมูลเรียบร้อยแล้ว',
-              icon: 'success',
-              confirmButtonText: 'ตกลง',
-              customClass: {
-                popup: 'swal2-custom-popup'
-              }
-            }).then(() => {
-              form.reset(); // Reset form fields after the alert is confirmed
-            });
-          } else {
-            throw new Error('Network response was not ok');
-          }
-        } catch (error) {
-          Swal.close(); // ปิดข้อความรอ
-          Swal.fire({
-            title: 'เกิดข้อผิดพลาด!',
-            text: 'ไม่สามารถบันทึกข้อมูลได้',
-            icon: 'error',
-            confirmButtonText: 'ตกลง'
-          });
-          console.error('Error!', error.message);
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      Swal.fire({
+        title: 'กรุณารอสักครู่',
+        text: 'ระบบกำลังประมวลผล...',
+        icon: 'info',
+        allowOutsideClick: false,
+        customClass: {
+          popup: 'swal2-custom-popup',
+          content: 'swal2-custom-content'
+        },
+        didOpen: () => {
+          Swal.showLoading();
         }
       });
+      try {
+        const response = await fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        });
+        if (response.ok) {
+          const formData = new FormData(form);
+          let summaryContent = '<ul>';
+          
+          // สร้างเนื้อหาสรุปข้อมูลจากฟอร์ม
+          formData.forEach((value, key) => {
+            summaryContent += `<li><strong>${key}</strong>: ${value}</li>`;
+          });
+
+          summaryContent += '</ul>';
+          
+          // แสดงหน้าต่างสรุปข้อมูลหลังจากส่งข้อมูลสำเร็จ
+          Swal.fire({
+            title: 'สำเร็จ!',
+            html: `<p>บันทึกข้อมูลเรียบร้อยแล้ว</p><p>ข้อมูลที่กรอก:</p>${summaryContent}`,
+            icon: 'success',
+            confirmButtonText: 'ปิด',
+            customClass: {
+              popup: 'swal2-custom-popup'
+            }
+          }).then(() => {
+            form.reset(); // Reset form fields after the alert is confirmed
+          });
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      } catch (error) {
+        Swal.close(); // ปิดข้อความรอ
+        Swal.fire({
+          title: 'เกิดข้อผิดพลาด!',
+          text: 'ไม่สามารถบันทึกข้อมูลได้',
+          icon: 'error',
+          confirmButtonText: 'ตกลง'
+        });
+        console.error('Error!', error.message);
+      }
     });
-  </script>
+  });
+</script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
